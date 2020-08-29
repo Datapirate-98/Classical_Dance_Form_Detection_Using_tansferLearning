@@ -1,0 +1,42 @@
+										DANCE FORM CLASSIFICATION
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+Language Used:
+-------------	
+Python(Jupyter Notebook)
+
+Library Used:
+-------------
+1. Keras
+2. Tensorflow
+3. Numpy
+4. Opencv
+5. pandas
+
+Approach:
+--------
+1. Here Transfer learning technique is used.(Due to less number of data in the given dataset)
+2. VGG19 model is selected as the base model.
+3. On top of the base model a Dense layer of 1024 neurons is used over a relu activation funtion.
+4. various Image Augmentation techniques is used for a better accuracy over a samll dataset.
+5. And model is trained over a 50 epochs to get an accuracy of 100% in train_data and 84% accuracy over validation_data.
+
+Feature Engineering:
+-------------------
+1. Each Image is cropped/resized to (224,224).
+2. Images are converted to numpy arrays as type np.float32.
+3. Each images are normalized to a one-hot encoded vectors.
+
+Final prediction:
+----------------
+1. Each file from the data is read using os.listdirs() method and stored in a list.
+2. Each maximum predicted labels are given there respictive dance form names, and appended in a list
+3. Then the above two lists are coverted into key : value pair (dictionary) respectively.
+4. Then a dataframe is created using pandas with columns as Iamge, target.
+5 And the dictionary is stored into that data frame and save as a .csv file.
+
+
+
+									  			Thank You
+

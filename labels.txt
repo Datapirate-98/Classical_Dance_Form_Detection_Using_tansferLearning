@@ -1,0 +1,8 @@
+0 bharatanatyam
+1 kathak
+2 kathakali
+3 kuchipudi
+4 manipuri
+5 mohiniyattam
+6 odissi
+7 sattriya
